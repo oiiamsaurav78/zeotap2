@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <!-- <video autoplay playsinline loop muted id="bgvideo">
+    <source src="./media/bg.mp4" type="video/mp4" />
+  </video> -->
+  <div class="container">
+    <h1 class="app-title">Weather Forecast</h1>
+    <div id="dropdown">
+      <select name="degree" id="deg" class="dropkey">
+        <option value="C"> °Celsius</option>
+        <option value="K"> °Kelvin</option>
+        <option value="F"> °Fahrenheit</option>
+      </select>
+    </div>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search for a city">
+      <button class="search-btn">🔍</button>
+    </div>
+    <div class="weather-card">
+      <h2 class="city">Weather in Mumbai</h2>
+      <h1 class="temp">26.66°C</h1>
+      <h1 class="temp-feels-like">Feels like: 26.00°C</h1>
+      <div class="weather-info">
+        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+        <div class="description">Cloudy</div>
+      </div>
+      <p class="dt">22/22/22 22:22</p>
+      <div class="details">
+        <div class="humidity">Humidity: 60%</div>
+        <div class="wind">Wind speed: 6.2 km/h</div>
+      </div>
+    </div>
+    <div class="forecast-card">
+      <h5>5-Day Weather Forecast</h5>
+      <div class="forecast-boxes">
+        <div class="forecast-box">
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon1">
+          <div class="temp1"></div>
+          <div class="dt1"></div>
+        </div>
+        <div class="forecast-box">
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon2">
+          <div class="temp2"></div>
+          <div class="dt2"></div>
+        </div>
+        <div class="forecast-box">
+          <img src="media/cloudy.jpg" alt="" class="icon3">
+          <div class="temp3"></div>
+          <div class="dt3"></div>
+        </div>
+        <div class="forecast-box">
+          <img src="media/rain.jpg" alt="" class="icon4">
+          <div class="temp4"></div>
+          <div class="dt4"></div>
+        </div>
+        <div class="forecast-box">
+          <img src="media/sunny.jpg" alt="" class="icon5">
+          <div class="temp5"></div>
+          <div class="dt5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
